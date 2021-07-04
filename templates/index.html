@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action='/uploadimage' method="POST" enctype="multipart/form-data"> -->
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <!-- <input type="submit"> -->
+        <button id='upload'>Upload</button>
+        <p id="msg"></p>
+    <!-- </form> -->
+</body>
+<script type="text/javascript" src="{{ url_for('static',filename='js/main.js') }}"></script>
+</html>
